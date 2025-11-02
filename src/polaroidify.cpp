@@ -23,10 +23,6 @@ void Polaroidify::add_border(Color border_color)
 
     Image new_image = Image(border_width, border_height);
 
-    std::cout << image_height << " " << image_width << std::endl;
-    std::cout << border_height << " " << border_width << std::endl;
-    std::cout << image_offset_y << " " << image_offset_x << std::endl;
-
     // fill in the top border
     for(std::size_t y = 0; y < image_offset_y; y++)
     {
